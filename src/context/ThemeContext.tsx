@@ -14,8 +14,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setThemeState] = useState<ThemeMode>(() => {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved === 'light' || saved === 'dark') return saved;
-    // Default theme for every new visitor is light.
-    return 'light';
+    return 'dark';
   });
 
   useEffect(() => {

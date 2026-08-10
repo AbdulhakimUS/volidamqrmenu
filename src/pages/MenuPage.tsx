@@ -4,7 +4,8 @@ import { useLang } from '../context/LangContext';
 import { useTheme } from '../context/ThemeContext';
 import { useMenu } from '../context/MenuContext';
 import type { Lang, MenuItem } from '../types';
-import { TrayIcon, SearchIcon, EmptyIcon, SunIcon, MoonIcon } from '../components/Icons';
+import { SearchIcon, EmptyIcon, SunIcon, MoonIcon } from '../components/Icons';
+import Logo from '../components/Logo';
 import ItemCard from '../components/ItemCard';
 import ItemModal from '../components/ItemModal';
 
@@ -77,8 +78,7 @@ export default function MenuPage() {
       <header className="topbar">
         <div className="topbar-inner">
           <div className="brand-mini">
-            <TrayIcon className="tray" />
-            <span className="word">Volidam</span>
+            <Logo size="mini" />
           </div>
           <div className="top-actions">
             <div className="lang-switch">

@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useLang } from '../context/LangContext';
 import { useMenu } from '../context/MenuContext';
-import { TrayIcon } from './Icons';
+import Logo from './Logo';
 import type { Lang } from '../types';
 
 export default function Welcome() {
@@ -20,9 +20,7 @@ export default function Welcome() {
     <div className="welcome">
       <div className="lattice-strip" style={{ position: 'absolute', top: 0, left: 0, right: 0 }} />
       <div className="brand-mark">
-        <TrayIcon className="tray" />
-        <div className="brand-name">Volidam</div>
-        <div className="brand-sub">Algoritm</div>
+        <Logo size="hero" />
       </div>
       <h1 className="welcome-greet">{t('welcomeTitle')}</h1>
       <p className="welcome-sub" dangerouslySetInnerHTML={{ __html: t('welcomeSub') }} />

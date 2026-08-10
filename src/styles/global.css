@@ -4,10 +4,10 @@
 }
 
 [data-theme='dark'] {
-  --bg: #0b0908;
-  --bg-soft: #141110;
-  --panel: #181412;
-  --panel-2: #1f1a17;
+  --bg: #000000;
+  --bg-soft: #0a0a0a;
+  --panel: #111111;
+  --panel-2: #1a1a1a;
   --gold: #c9a24a;
   --gold-light: #e8cf8f;
   --gold-dim: #8a713a;
@@ -92,34 +92,21 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
   margin-bottom: 34px;
 }
-.brand-mark .tray {
-  width: 46px;
-  height: 46px;
-  margin-bottom: 10px;
-  color: var(--gold);
+.brand-logo {
+  display: block;
+  height: auto;
+  object-fit: contain;
+  user-select: none;
 }
-.brand-name {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-weight: 700;
-  font-size: clamp(48px, 11vw, 76px);
-  background: linear-gradient(180deg, var(--red-light), var(--red) 70%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  line-height: 1;
-  letter-spacing: 0.5px;
+.brand-logo--hero {
+  width: min(280px, 72vw);
+  max-height: 220px;
 }
-.brand-sub {
-  font-size: 13px;
-  letter-spacing: 0.55em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-top: 8px;
-  font-weight: 600;
+.brand-logo--mini {
+  width: auto;
+  height: 36px;
 }
 .welcome-greet {
   font-family: 'Playfair Display', serif;
@@ -201,19 +188,6 @@ button {
 .brand-mini {
   display: flex;
   align-items: center;
-  gap: 9px;
-}
-.brand-mini .tray {
-  width: 24px;
-  height: 24px;
-  color: var(--gold);
-}
-.brand-mini .word {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-weight: 700;
-  font-size: 21px;
-  color: var(--red-light);
 }
 .top-actions {
   display: flex;
